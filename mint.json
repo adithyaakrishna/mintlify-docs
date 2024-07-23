@@ -22,7 +22,7 @@
   "tabs": [
     {
       "name": "CLI & UI",
-      "url": "/cli-ui/"
+      "url": "cli-ui"
     },
     {
       "name": "Extractors",
@@ -51,19 +51,19 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Website",
+      "icon": "globe",
+      "url": "https://getindexify.ai"
     },
     {
       "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "icon": "discord",
+      "url": "https://dub.sh/tensorlake-discord"
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://dub.sh/indexify-github"
     }
   ],
   "navigation": [
@@ -81,6 +81,14 @@
       "pages": [
         "/docs/getting-started-basic",
         "/docs/getting-started-intermediate"
+      ]
+    },
+    {
+      "group": "CLI & UI",
+      "pages": [
+        "cli-ui/extractor_cli",
+        "cli-ui/server_cli",
+        "cli-ui/ui"
       ]
     }
   ],
