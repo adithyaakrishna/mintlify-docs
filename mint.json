@@ -2,33 +2,51 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Docs",
   "logo": {
-    "dark": "/logo/logo.png",
-    "light": "/logo/logo.png"
+    "dark": "/images/logo/dark.svg",
+    "light": "/images/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#3296FE",
+    "light": "#3296FE",
+    "dark": "#DBEAFE",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#3296FE",
+      "to": "#DBEAFE"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Get in Touch",
+    "url": "https://dub.sh/diptanu-calendly"
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "CLI & UI",
+      "url": "/cli-ui/"
+    },
+    {
+      "name": "Extractors",
+      "url": "/extractors"
+    },
+    {
+      "name": "APIs",
+      "url": "/apis"
+    },
+    {
+      "name": "Use Cases",
+      "url": "/usecases"
+    },
+    {
+      "name": "LLM Frameworkws",
+      "url": "/integrations"
+    },
+    {
+      "name": "Deployment and Operation",
+      "url": "/operations"
+    },
+    {
+      "name": "Examples",
+      "url": "/examples"
     }
   ],
   "anchors": [
@@ -50,36 +68,19 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Indexify",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        "key-concepts",
+        "architecture",
+        "comparisons"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Get Started",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "/docs/getting-started-basic",
+        "/docs/getting-started-intermediate"
       ]
     }
   ],

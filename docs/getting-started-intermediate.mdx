@@ -1,7 +1,6 @@
-import { Callout } from 'nextra/components';
-import { Tabs } from 'nextra/components';
-
-# Getting Started - Parsing complex PDF Documents
+---
+title: Intermediate - Parsing complex PDF Documents
+---
 
 What if one could go through a 26-page complex tax document and understand it without a lawyer, an accountant, or the geek from college? What if 5 easy-to-follow steps were all you need to do reliable QnA on a complex and layered document like a tax invoice?
 Indexify enables you to do just that.
@@ -82,15 +81,15 @@ Extractors are specialized components in Indexify that process and transform dat
 - MiniLM-L6 Extractor: Generates embeddings for text chunks
 
 
-<Callout type="info" emoji="️ℹ️">
+<Note>
   The source code for this tutorial can be found [here](https://github.com/tensorlakeai/indexify/tree/main/examples/getting_started/website/intermediate) in our example folder
-</Callout>
+</Note>
 
 Before we begin, let's setup a virtual environment for Python projects and download the extractors
 
-<Callout type="info" emoji="️ℹ️">
+<Note>
   Indexify requires python 3.11 or older at this present moment to work.
-</Callout>
+</Note>
 
     
 
@@ -284,9 +283,9 @@ Once uploaded, Indexify will automatically process the PDF through our defined e
 
 We can use the same prompting and context retrieval function defined above to get context for the LLM based on the question.
 
-<Callout type="info" emoji="️ℹ️">
+<Note>
   You'll want to have exported `OPENAI_API_KEY` and set to your API key before running these scripts.
-</Callout>
+</Note>
 
 
 <Tabs items={['Python', 'TypeScript']}>
@@ -388,7 +387,7 @@ python3 ./query_tax_info.py
 ```
 The example question asks about California tax brackets and calculates taxes for a $24,000 income. The LLM uses the context provided by our Indexify pipeline to formulate an accurate response as shown below.
 
-<Callout type="info" emoji="️ℹ️">
+<Note>
 Based on the provided information, the tax rates and brackets for California are as follows:
 
     - $0 - $11,450: 10% of the amount over $0
@@ -407,7 +406,7 @@ Based on the provided information, the tax rates and brackets for California are
 
     Therefore, your total tax liability would be $1,145 + $1,882.50 = $3,027.50.
 
-</Callout>
+</Note>
 
 ## Conclusion
 
